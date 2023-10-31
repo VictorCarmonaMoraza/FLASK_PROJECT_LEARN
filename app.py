@@ -29,3 +29,10 @@ def mostrar_edad(edad):
 @app.route('/edadString2/<edad>')
 def mostrar_edad2(edad):
     return f'Tu edad es: {edad +str(12)}'
+
+##http://localhost:5000/mostrar/Victor
+## En este caso procesara operaciones de tipo GET y tipo POST
+## Si no ponemos nada procesar peticiones de tipo GET
+@app.route('/mostrar/<nombre>', methods=['GET','POST'])
+def mostrar_nombre(nombre):
+    return f'Tu nombre es: {nombre}'
