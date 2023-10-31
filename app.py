@@ -26,6 +26,6 @@ def mostrar_edad(edad):
 
 ##http://localhost:5000/edad/12
 ##En este caso el tipo que recibe es un parametro de tipo entero
-@app.route('/edadString/<edad>')
+@app.route('/edadString2/<edad>')
 def mostrar_edad2(edad):
     return f'Tu edad es: {edad +str(12)}'
